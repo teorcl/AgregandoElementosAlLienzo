@@ -39,13 +39,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85f-sF-ddf">
-                                        <rect key="frame" x="70" y="78" width="91" height="50"/>
+                                        <rect key="frame" x="75" y="78" width="91" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Ocultar" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="16"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="hideButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qba-MX-Pgl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -54,6 +57,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
+                    <connections>
+                        <outlet property="hideButton" destination="85f-sF-ddf" id="3HD-k9-nRp"/>
+                        <outlet property="principalTitleLabel" destination="nmT-gV-iun" id="bqJ-xA-ScU"/>
+                        <outlet property="profilePictureImageView" destination="g0s-go-dFq" id="juW-Gf-F1i"/>
+                        <outlet property="telephoneNumberLabel" destination="5Yh-T6-3co" id="KZ2-8C-Cpz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
